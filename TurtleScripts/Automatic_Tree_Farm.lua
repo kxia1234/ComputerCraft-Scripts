@@ -1,3 +1,10 @@
+
+---------------------------------------------
+--                                         --
+-- Automatic Tree Farm Script by Kevin Xia --
+--                                         --
+---------------------------------------------
+
 -- START SCREEN --
 local function start_screen()
   print("+-------------------------------------+")
@@ -6,6 +13,11 @@ local function start_screen()
 end
 
 -- CHECK BLOCK NEIGHBORS --
+-- RETURN KEY:  --
+-- NORTH = 0  --
+-- EAST  = 1  --
+-- SOUTH = 2  --
+-- WEST  = 3  --
 local function check_block_neighbors()
   -- CHECK NORTH --
   if turtle.detect() then
